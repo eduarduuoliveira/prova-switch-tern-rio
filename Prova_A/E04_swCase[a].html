@@ -1,0 +1,44 @@
+<script>
+    //SWITCH CASE SWITCH CASE SWITCH CASE
+
+    //PROBLEMA: Compra de carro
+    //Peça para o usuário informar a categoria do carro que deseja comprar. Crie uma estrutura que analise qual a categoria do carro que irá comprar e retorne a mensagem de acordo com as seguintes possibilidades:
+    //Se informou Hatch, o programa retornará a mensagem "Para menores de 30 anos".
+    //Se informou Sedan, o programa retornará a mensagem "Para maiores de 70 anos".
+    //Se informou SUV, o programa retornará a mensagem "Carro pra família"
+    //Crie também um default, que retornará a mensagem "Categoria de carro inválida".
+    //Apresente a mensagem de acordo com a categoria informada.
+
+    //DICA: Use HA para Hatch, SE para Sedan, SU para SUV.
+
+    //ENTRADA
+
+    const categoria = prompt("Informe a categoria de carro que deseja comprar: [HA] ou [SE] ou [SU]").toLowerCase();
+    let status;
+
+    //PROCESSAMENTO
+
+    switch (categoria) {
+        case "ha" :
+            status = "Para maiores de 30 anos"
+            break;
+
+            case "se":
+            status = "Para maiores de 70 anos"
+            break;
+
+            case "su":
+            status = "Carro para família"
+            break;
+    
+        default:
+        status = "Categoria de carro inválida"
+            break;
+    }
+
+
+    //SAÍDA
+
+    document.write(`${status}`);
+
+</script>
