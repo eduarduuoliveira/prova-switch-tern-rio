@@ -1,1 +1,1 @@
-# prova-switch-tern-rio
+# prova-switch-ternario
